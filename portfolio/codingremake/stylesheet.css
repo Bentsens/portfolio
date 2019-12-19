@@ -1,0 +1,454 @@
+* {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+@font-face {
+  font-family: 'nevis';
+  font-style: normal;
+  font-weight: normal;
+  src: url('nevis.ttf');
+}
+
+@keyframes transitionIn {
+  from {
+    opacity: 0;
+    transform: translateY(5%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.noneactive::after {
+  content: '';
+  width: 0;
+  height: 2px;
+  background: white;
+  transition: width .3s;
+  display: block;
+}
+
+.noneactive:hover::after {
+  width: 100%;
+  background-color: white;
+  transition: width .3s;
+}
+
+.noneactive2::after {
+  content: '';
+  width: 0;
+  height: 2px;
+  background: white;
+  transition: width .3s;
+  display: block;
+}
+
+.noneactive2:hover::after {
+  width: 100%;
+  background-color: white;
+  transition: width .3s;
+}
+
+.load {
+  animation: transitionIn 0.75s;
+}
+
+.frontpage {
+  background-color: #2E2E2E;
+  height: 100%;
+  overflow: hidden
+}
+
+.menu {
+  background-color: #95c0cc;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigation {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.navigation li a {
+  text-decoration: none;
+  color: white;
+  font-family: nevis;
+  transition: 0.4s;
+}
+
+.active {
+  background-color: #2E2E2E;
+  padding: 15px 50px;
+  color: white;
+  font-family: nevis;
+  transition: 0.4s;
+}
+
+.noneactive {
+    background-color: #95c0cc;
+    padding: 15px 50px;
+}
+
+.some {
+  padding: 15px;
+}
+
+.some a {
+  text-decoration: none;
+  color: white;
+  margin: 0 20px;
+  transition: 0.4s;
+}
+
+.some a:hover {
+  transition: 0.4s;
+  text-shadow: 0 0 14px #ffffffff;
+}
+
+.imagetest {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.front {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.front h1 {
+  display: flex;
+  font-family: nevis;
+  text-shadow: -3px 3px 20px #00000080;
+}
+
+.firstline, .thirdline {
+  color: white;
+}
+
+.left {
+  padding: 200px;
+  padding-left: 300px;
+  min-width: 460px;
+}
+
+.secondline {
+  color: #74CEE5;
+  font-size: 80px;
+}
+
+.btnfront {
+  margin-top: 30px;
+}
+
+.btnfront a {
+  color: white;
+  border: 2px solid #74CEE5;
+  font-family: nevis;
+  text-decoration: none;
+  padding: 10px 40px;
+}
+
+.active2 {
+  background-color: #74CEE5;
+  padding: 15px 50px;
+  color: white;
+  font-family: nevis;
+  transition: 0.4s;
+  box-shadow: 0 0 20px #0000008a;
+}
+
+.projectspage {
+  background-image: url("backgroundimageallpages.png");
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 0;
+}
+
+.noneactive2 {
+  padding: 15px 50px;
+}
+
+.menu2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigation2 {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.navigation2 li a {
+  text-decoration: none;
+  color: white;
+  font-family: nevis;
+}
+
+.toptext h1, .toptext p {
+  color: white;
+}
+
+.toptext h1 {
+  font-family: nevis;
+}
+
+.toptext p {
+  font-family: Quicksand;
+}
+
+.top {
+  display: flex;
+  justify-content: center;
+  margin-top: 5vh
+}
+
+.toptext {
+  border-bottom: 2px solid #74CEE5;
+}
+
+.flexpis {
+  margin-top: 5vh;
+  display: flex;
+  justify-content: center;
+}
+
+.gridpis {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  justify-items: center;
+}
+
+.imgpjat {
+  margin: 50px
+}
+
+.virkpls {
+  width: 100%;
+  position: relative;
+  margin-top: -45%;
+  background-color: #2E2E2E;
+  max-width: 250px;
+  padding: 10px 0;
+}
+
+.virkpls h1 {
+  color: white;
+  font-family: nevis;
+}
+
+.virkpls p {
+  color: white;
+  font-family: Quicksand;
+  font-size: 13px;
+}
+
+.meregrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 12vh;
+}
+
+.billedet {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.teksten {
+  max-width: 600px;
+  margin-left: 50px;
+}
+
+.teksten h1 {
+  color: white;
+  font-family: nevis
+}
+
+.teksten p {
+  font-family: Quicksand;
+  color: white;
+  margin-top: 2vh;
+}
+
+.borderokay {
+  border-bottom: 2px solid #74CEE5
+}
+
+.knapper {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 20px;
+}
+
+.knap1 a, .knap2 a {
+  color: white;
+  font-family: nevis;
+  text-decoration: none;
+  text-align: center;
+  font-size: 13px;
+}
+
+.knap2 {
+  margin-left: 20px;
+  padding: 10px 20px;
+  border: 2px solid #74CEE5;
+  transition: 0.4s;
+}
+
+.knap1 {
+  padding: 10px 45px;
+  background-color: #74CEE5;
+  transition: 0.4s;
+}
+
+.knap1:hover, .knap2:hover {
+  transform: scale(1.1);
+  transition: 0.4s;
+}
+
+.storkasse {
+  display: flex;
+  justify-content: center;
+}
+
+.gridigen {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* justify-items: center; */
+}
+
+.contactwindow {
+  display: flex;
+  justify-content: center;
+}
+
+.contactform {
+  box-sizing: border-box;
+  max-width: 1200px;
+  margin-top: 3vh;
+}
+
+.contactform h1 {
+  margin-top: 0;
+  font-weight: 200;
+  font-size: 20px;
+  margin-left: 11px
+}
+
+.textbox {
+  border: 1px solid grey;
+  margin: 8px 10px;
+  padding: 10px 15px;
+  background-color: #3d3d3d;
+}
+
+.textbox label {
+  display: block;
+  text-align: left;
+  color: #C7C6C6;
+  font-family: Quicksand;
+  font-size: 13px;
+}
+
+.contactform h1 {
+  font-family: nevis;
+  color: white;
+  margin-bottom: 2vh;
+  font-size: 40px;
+  border-bottom: 2px solid #74CEE5;
+  max-width: 667px;
+}
+
+.textbox input, .textbox textarea {
+  width: 100%;
+  border: none;
+  background: none;
+  outline: none;
+  font-family: Quicksand;
+}
+
+.cformbtn {
+  display: inline-block;
+  background-color: #74CEE5;
+  padding: 10px 0;
+  color: white;
+  cursor: pointer;
+  margin-top: 8px;
+  width: 10vw;
+  text-decoration: none;
+  font-size: 13px;
+  font-family: nevis;
+  transition: 0.4s;
+  margin-left: 11px;
+}
+
+.cformbtn {
+  text-align: center;
+}
+
+.cformbtn:hover {
+  transition: 0.4s;
+  color: ;
+  background-color: #3d3d3d;
+}
+
+.gridshit {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+}
+
+.nameform {
+  grid-column: 1 /span 1;
+  grid-row: 1 /span 1;
+}
+
+.phoneform {
+  grid-column: 2 /span 1;
+  grid-row: 1 /span 1;
+}
+
+.mailform {
+  grid-column: 1 /span 1;
+  grid-row: 2 /span 1;
+}
+
+.subjectform {
+  grid-column: 2 /span 1;
+  grid-row: 2 /span 1;
+}
+
+.messageform {
+  grid-column: 1 /span 2;
+  grid-row: 3 /span 2;
+}
+
+.venstreside {
+  margin-top: 10vh;
+  margin-left: 8vw;
+}
+
+.venstreside h1 {
+  color: white;
+  font-family: nevis;
+  font-size: 30px;
+}
+
+.storkasse {
+  margin-top: 10vh;
+}
+
+.venstreside p {
+  font-family: Quicksand;
+  color: white;
+}
+
+.fakeinfo {
+  margin-top: 20px;
+}
